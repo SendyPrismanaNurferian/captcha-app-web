@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Captcha App | Sendy</title>
+</head>
+
+<body>
+    <div id="captcha-container">
+        <div class="header">
+            <h1>Verify You're Human</h1>
+            <button id="toggle-dark-mode">🌙 Dark Mode</button>
+        </div>
+        <img src="bg-vector.jpg" alt="Background Image">
+        <div class="captcha">
+            <canvas id="captcha" width="200" height="40"></canvas>
+            <div class="captcha-buttons">
+                <button id="reload-captcha">Reload</button>
+                <button id="copy-captcha">Copy</button>
+                <button id="audio-captcha">🔊</button>
+            </div>
+        </div>
+        <div class="user">
+            <input type="text" id="captcha-input" placeholder="Enter CAPTCHA">
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <button id="check-captcha">Check</button>
+        </div>
+        <p id="captcha-status">Status: IDLE</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
